@@ -1,0 +1,89 @@
+.contacto {
+  padding-bottom: 50px;
+}
+
+.cuadro_principal {
+  width: 1200px;
+  height: 500px;
+  background-color: var(--main-color);
+  margin: auto;
+  border-radius: 10px;
+}
+
+.container_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.container_info pre {
+  font-family: var(--main-font);
+}
+
+.izquierda_contacto {
+  text-align: left;
+  padding-right: 75px;
+}
+
+.derecha_contacto {
+  text-align: left;
+}
+
+span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+  background-color: #fff;
+  color: var(--text-color-inverse);
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+
+.formulario button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: var(--text-color-inverse);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.redes_sociales {
+  display: flex;
+  font-size: 35px;
+  margin-left: 65px;
+}
+
+.redes_sociales i {
+  padding-right: 35px;
+}
+
+#azul {
+  color: #3b5998;
+}
+#plomo {
+  color:  #171515;
+}
+#rojo {
+  color: #db4a39;
+}
+#celeste {
+  color: #00acee;
+}

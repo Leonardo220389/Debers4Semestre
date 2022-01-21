@@ -1,0 +1,66 @@
+:root {
+  --main-font: "Raleway";
+  --font-size: 16px;
+  --main-color: #41c49d;
+  --second-color: #e0dde7;
+  --text-color: #fff;
+  --text-color-inverse: #222222;
+  --container-width: 1200px;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-color);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  box-sizing: inherit;
+  font-size: inherit;
+  overflow-x: hidden; /*Algo sobre sale de la pantalla*/
+  background-color: var(--text-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+li{
+  list-style-type: none;
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+
+}
+h3{
+    font-size: 30px;
+}
+
+h4{
+  font-size: 20PX;
+}
+
+.sintaxis {
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  padding: 50px;
+}
+

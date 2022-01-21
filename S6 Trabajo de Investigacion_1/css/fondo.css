@@ -1,0 +1,28 @@
+.seccion2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    }
+
+.fondo {
+  width: 100%;
+  height: 1000px;  
+  background-color: var(--main-color);
+  
+}
+
+.fondobajo {
+  transform: scaleY(-1)
+}
+
+
+
+
+
+
+
+
+
+

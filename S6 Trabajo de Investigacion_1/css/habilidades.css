@@ -1,0 +1,103 @@
+.habilidades {
+  margin-top: 250px;
+  color: var(--main-color);
+}
+
+.conjunto {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fila1 {
+  display: flex;
+  justify-content: center;
+}
+.fila1 a {
+  color: var(--text-color-inverse);
+  border-bottom: 0px;
+}
+
+.fila1 li {
+  padding: 30px 20px;
+  background-color: var(--text-color);
+  box-shadow: 0 4px 10px #222222;
+  border-radius: 42px;
+  padding: 0.3em 0.7em;
+  margin: 10px;
+  transition: 1s ease-in-out;
+}
+
+.fila1 li:hover {
+  background-color: var(--main-color);
+  font-size: 25px;
+}
+
+.fila2 {
+  display: flex;
+  justify-content: center;
+}
+.fila2 a {
+  color: var(--text-color-inverse);
+  border-bottom: 0px;
+}
+
+.fila2 li {
+  padding: 30px 20px;
+  background-color: var(--text-color);
+  box-shadow: 0 4px 10px #222222;
+  border-radius: 42px;
+  padding: 0.3em 0.7em;
+  margin: 10px;
+  transition: 1s ease-in-out;
+}
+.fila2 li:hover {
+  background-color: var(--main-color);
+  font-size: 25px;
+}
+
+.fila3 {
+  display: flex;
+  justify-content: center;
+}
+.fila3 a {
+  color: var(--text-color-inverse);
+  border-bottom: 0px;
+}
+
+.fila3 li {
+  padding: 30px 20px;
+  background-color: var(--text-color);
+  box-shadow: 0 4px 10px #222222;
+  border-radius: 42px;
+  padding: 0.3em 0.7em;
+  margin: 10px;
+  transition: 1s ease-in-out;
+}
+.fila3 li:hover {
+  background-color: var(--main-color);
+  font-size: 25px;
+}
+
+.fila4 {
+  display: flex;
+  justify-content: center;
+}
+.fila4 a {
+  color: var(--text-color-inverse);
+  border-bottom: 0px;
+}
+
+.fila4 li {
+  padding: 30px 20px;
+  background-color: var(--text-color);
+  box-shadow: 0 4px 10px #222222;
+  border-radius: 42px;
+  padding: 0.3em 0.7em;
+  margin: 10px;
+  transition: 1s ease-in-out;
+}
+
+.fila4 li:hover {
+  background-color: var(--main-color);
+  font-size: 25px;
+}

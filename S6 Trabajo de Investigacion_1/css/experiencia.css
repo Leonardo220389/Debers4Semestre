@@ -16,7 +16,7 @@
   grid-template-rows: 250px 250px 250px;
 }
 
-h3{
+h3 {
   color: var(--text-color-inverse);
 }
 
@@ -42,4 +42,35 @@ hr {
   width: 4px;
   background-color: var(--text-color);
   border: 0px;
+}
+
+@media (max-width: 760px) {
+  .grid-container {
+    display: inline-grid;
+    justify-content: center;
+    grid-template-columns: 500px;
+    grid-template-rows: 250px;
+    margin-top: -220px;
+  }
+  .esfera {
+    width: 0px;
+    height: 0px;
+    background-color: rgba(red, green, blue, 0);
+    border-radius: 100%;
+  }
+
+  hr {
+    height: 0px;
+    width: 0px;
+    background-color: rgba(red, green, blue, 0);
+    border: 0px;
+  }
+  .izquierda {
+    text-align: left;
+    padding-right: 0px;
+  }
+  .derecha {
+    text-align: left;
+    padding-left: 0px;
+  }
 }

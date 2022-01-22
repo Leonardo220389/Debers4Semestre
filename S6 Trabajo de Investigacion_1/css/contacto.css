@@ -50,7 +50,6 @@ span {
   resize: none;
 }
 
-
 .formulario button {
   display: block;
   width: 100%;
@@ -79,11 +78,39 @@ span {
   color: #3b5998;
 }
 #plomo {
-  color:  #171515;
+  color: #171515;
 }
 #rojo {
   color: #db4a39;
 }
 #celeste {
   color: #00acee;
+}
+
+@media (max-width: 760px) {
+  .cuadro_principal {
+    width: 650px;
+    height: 730px;
+    background-color: var(--main-color);
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .container_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .izquierda_contacto {
+    text-align: left;
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+  .derecha_contacto {
+    text-align: left;
+    *padding-right: 20px;
+  }
 }

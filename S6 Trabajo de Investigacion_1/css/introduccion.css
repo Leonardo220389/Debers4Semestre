@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .introduccion-informacion {
   font-family: var(--main-font);
@@ -29,6 +29,15 @@
   border-radius: 8px;
 }
 
+.introduccion-informacion .boton:hover {
+  background-color: var(--text-color-inverse);
+  font-size: 25px;
+  padding: 11px 21px;
+  color: white;
+  font-style: bold;
+  border-radius: 8px;
+  border-bottom: 0px;
+}
 a {
   margin-bottom: 10px;
   border-bottom: 5px;
@@ -75,6 +84,17 @@ a:hover {
     border-radius: 8px;
     margin-left: 182px;
   }
+
+  .introduccion-informacion .boton:hover {
+    background-color: var(--text-color-inverse);
+    font-size: 13px;
+    padding: 11px 21px;
+    color: white;
+    font-style: bold;
+    border-radius: 8px;
+    border-bottom: 0px;
+  }
+
   h1 {
     font-size: 30px;
     text-align: center;

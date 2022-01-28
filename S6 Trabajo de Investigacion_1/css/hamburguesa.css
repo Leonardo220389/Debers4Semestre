@@ -2,7 +2,7 @@
   .panel-btn {
     color: var(--text-color-inverse);
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     right: 10px;
     top: 10px;
     width: 60px;

@@ -70,21 +70,8 @@ span {
   margin-left: 65px;
 }
 
-.redes_sociales i {
+.redes_sociales p {
   padding-right: 35px;
-}
-
-#azul {
-  color: #3b5998;
-}
-#plomo {
-  color: #171515;
-}
-#rojo {
-  color: #db4a39;
-}
-#celeste {
-  color: #00acee;
 }
 
 @media (max-width: 760px) {
@@ -107,10 +94,15 @@ span {
   .izquierda_contacto {
     text-align: left;
     padding-right: 15px;
-    padding-bottom: 25px;
+    
   }
   .derecha_contacto {
     text-align: left;
-    *padding-right: 20px;
+    padding-right: 20px;
   }
+
+  .redes_sociales p {
+  padding-right: 35px;
+  margin-top: -20px;
+}
 }

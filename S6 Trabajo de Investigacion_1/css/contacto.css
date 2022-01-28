@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .container_info pre {
@@ -28,6 +28,7 @@
 
 .derecha_contacto {
   text-align: left;
+  margin-top: -30px;
 }
 
 span {
@@ -72,6 +73,7 @@ span {
 
 .redes_sociales p {
   padding-right: 35px;
+  margin-top: -5px;
 }
 
 @media (max-width: 760px) {
@@ -99,10 +101,11 @@ span {
   .derecha_contacto {
     text-align: left;
     padding-right: 20px;
+    margin-top: -10px;
   }
 
   .redes_sociales p {
   padding-right: 35px;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 }

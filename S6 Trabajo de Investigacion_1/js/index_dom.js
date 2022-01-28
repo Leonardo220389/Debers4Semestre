@@ -60,30 +60,3 @@ function Modal() {
 }
 
 Modal();
-
-const validarEmail = (email = "") => {
-  if (!email) return console.warn("no ingresaste un nombre");
-  if (typeof email !== "string")
-    return console.error(
-      `El valor "${email}" ingresado, No es una cadena de texto`
-    );
-  let expReg =
-    /[a-z0-9]+(\.[_a-z0-9]+)@[a-z0-9-]+(\.[a-z0-9-]+)(\.[a-z]{2,15})/i.test(
-      email
-    );
-  return expReg
-    ? console.info(`"${email}", es un email valido`)
-    : console.warn(`"${email}", no es un email valido`);
-};
-
-const validarNombre = (nombre = "") => {
-  if (!nombre) return console.warn("no ingresaste un nombre");
-  if (typeof nombre !== "string")
-    return console.error(
-      `El valor "${nombre}" ingresado, No es una cadena de texto`
-    );
-  let expReg = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/g.test(nombre);
-  return expReg
-    ? console.info(`"${nombre}", es un nombre valido`)
-    : console.warn(`"${nombre}", no es un nombre valido`);
-};

@@ -61,7 +61,7 @@ export class Empleado {
             document.getElementById("combo-cargos").value = cargoid;
             document.getElementById("combo-departamentos").value = dptoid;
             document.getElementById("sueldo").value = sueldo;
-            document.getElementById("estado").Checked = estado;
+            document.getElementById("activo").checked = estado;
             document.getElementById("enviar").innerHTML = "Actualizar";
             this.grabar = false;
           });

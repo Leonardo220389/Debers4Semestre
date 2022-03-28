@@ -17,6 +17,44 @@ d.addEventListener("click", async (e) => {
     let $Departamento = d.getElementById("combo-departamentos").value;
     let $sueldo = d.getElementById("sueldo").value;
     let $estado = d.getElementById("activo").checked;
+  
+    const valinum =  /^\d{7,14}$/;
+    const valideci = /^[0-9]+([,][0-9]+)?$/;
+    const valinombre = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+
+    if ($nombre.length == 0 && $cedula.length == 0 && $sueldo == 0) {
+      alert("No escribio nada");
+      return;
+    }
+    if ($nombre.length == 0) {
+      alert("No ingresaste un Nombre");
+      return;
+    }
+    if (!valinombre.test($nombre)) {
+      alert("Ingresaste mal el nombre");
+      return;
+    }
+    if ($cedula.length == 0) {
+      alert("No ingresaste una Cedula correcta");
+      return;
+    }
+
+    if (!valinum.test($cedula)) {
+      alert("cedula Incorrecta");
+      return;
+    }
+
+    if ($sueldo.length == 0) {
+      alert("No ingresaste valor");
+      return;
+    }
+    if (!valideci.test($sueldo)) {
+      alert("sueldo Incorrecto");
+      return;
+    }
+
+
+
     if ($nombre.trim().length < 3) {
       alert("Datos vacios o incompletos");
     } else {
@@ -41,7 +79,15 @@ d.addEventListener("click", async (e) => {
         const empleadoJson = JSON.stringify(empleado);
         const res = await serEmpleado.insertarDatos(empleadoJson);
 
-      } else {
+      } 
+      else {
+        let listaCargo = await fetch("http://localhost:3000/cargos")
+        .then((res) => res.json())
+        let listaDepartamento = await fetch("http://localhost:3000/departamentos")
+        .then((res) => res.json())
+        let idCargo = listaCargo.filter(cargo => cargo.descripcion == $Cargo)[0].id  
+        let idDepartamento = listaDepartamento.filter(departamento => departamento.descripcion == $Departamento)[0].id
+        
         let id = serEmpleado.id;
         const empleado = {
           nombre: $nombre,
@@ -55,6 +101,7 @@ d.addEventListener("click", async (e) => {
         const res = await serEmpleado.modificarDatos(
           empleadoModJson,
           serEmpleado.id
+        
         );
       }
       $formEmpleado.reset();
